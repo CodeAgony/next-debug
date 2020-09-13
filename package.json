@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "cross-env": "^7.0.2",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1"
