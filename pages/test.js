@@ -9,17 +9,19 @@ const testFn = () => {
   console.log(testConst)
 }
 
-debugger
 testFn()
 
   return (
     <div>
-      Test {stars}
+      Testttt {stars}
     </div>
   )
 }
 
+debugger
 Test.getInitialProps = async (ctx) => {
+console.log("Test.getInitialProps -> ctx", ctx)
+
   const res = await fetch('https://api.github.com/repos/vercel/next.js')
   const json = await res.json()
   return { stars: json.stargazers_count }
